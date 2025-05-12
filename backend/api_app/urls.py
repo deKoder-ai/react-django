@@ -1,8 +1,8 @@
 from django.urls import path, include
-from rest_framework import routers
+from rest_framework.routers import DefaultRouter
 from api_app.views import PatientViewSet
 
-router = routers.DefaultRouter()
+router = DefaultRouter()
 router.register(r'patient', PatientViewSet)
 
 urlpatterns = [
